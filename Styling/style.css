@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1f2a38;
+    text-align: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #1f2a38;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+table tr:hover {
+    background-color: #e0f2fe;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.top-panel {
+    background-color: #1f2937;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.top-panel a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.top-panel a:hover {
+    color: #3b82f6;
+}
+
+.alert {
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    background-color: #ef4444;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.alert.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+}

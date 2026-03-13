@@ -45,11 +45,11 @@ if(isset($_POST['submit'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AddBookPage</title>
-    <link rel="stylesheet" href=".//Styling/style.css">
+    <link rel="stylesheet" href="Styling/style.css">
 </head>
 <body>
 
-<script src=".//Script/script.js"></script>
+<script src="Script/script.js"></script>
 <?php
 require("PHPRefs/connect.php");
 require("PHPRefs/toppanel.php");
@@ -88,6 +88,10 @@ require("PHPRefs/toppanel.php");
 
     </table>
 </form>
+
+<?php
+require("PHPRefs/footer.php");
+?>
 </body>
 </html>
 

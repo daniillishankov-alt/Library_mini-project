@@ -47,13 +47,15 @@ if(isset($_POST['search'])){
 <head>
     <meta charset="UTF-8">
     <title>Library</title>
-    <link rel="stylesheet" href=".//Styling/style.css">
+    <link rel="stylesheet" href="Styling/style.css">
 </head>
 
 <body>
+<header>
+    <?php require_once("PHPRefs/toppanel.php"); ?>
+</header>
+<script src="Script/script.js"></script>
 
-<script src=".//Script/script.js"></script>
-<?php require_once("PHPRefs/toppanel.php"); ?>
 
 <?php if(!empty($errorMessage)): ?>
     <div class="alert"><?= htmlspecialchars($errorMessage) ?></div>
@@ -89,9 +91,6 @@ if(isset($_POST['search'])){
 
 </form>
 
-</body>
-</html>
-
 <?php if(!empty($rows)): ?>
 
     <h2>Search Results</h2>
@@ -123,3 +122,11 @@ if(isset($_POST['search'])){
     <p>No books found.</p>
 
 <?php endif; ?>
+
+
+<?php
+require("PHPRefs/footer.php");
+?>
+</body>
+</html>
+

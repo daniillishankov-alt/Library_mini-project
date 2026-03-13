@@ -12,11 +12,8 @@ if(isset($_POST['submit'])) {
     $year = trim($_POST['year'] ?? '');
 
     if(empty($title) || empty($author) || empty($genre) || empty($year)){
-        // Ошибка остаётся на этой же странице
         $errorMessage = "All fields must be filled.";
-    } elseif(!is_numeric($year)){
-        $errorMessage = "Year must be a number.";
-    } else {
+    } else{
         try {
             $sql = "INSERT INTO books (title, author, genre, year)
                     VALUES (:title, :author, :genre, :year)";
@@ -28,10 +25,8 @@ if(isset($_POST['submit'])) {
                     ':year'=>$year
             ]);
 
-            // Успех — можно показать уведомление на index.php
             $_SESSION['successMessage'] = "Book successfully added.";
 
-            // Перенаправляем на страницу поиска после успешного добавления
             header("Location: index.php");
             exit();
 
